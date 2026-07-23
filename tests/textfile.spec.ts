@@ -1,6 +1,10 @@
 import { chromium, expect, test } from "@playwright/test";
 import path from "path";
 
+// test.skip(
+//   !!process.env.CI,
+//   'Persistent Chrome profile test is skipped in CI'
+// );
 test("MakeMyTrip using persistent Chrome", async () => {
   const profilePath = path.join(
     process.cwd(),
