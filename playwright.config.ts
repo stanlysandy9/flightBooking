@@ -27,13 +27,13 @@ export default defineConfig({
   use: {
     ...devices["Desktop Chrome"],
     channel: "chrome",
-    headless: false,
+    headless: true,
     locale: "en-IN",
     timezoneId: "Asia/Kolkata",
-    viewport: {
-      width: 1440,
-      height: 900
-    },
+    // viewport: {
+    //   width: 1440,
+    //   height: 900
+    // },
     
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
@@ -46,7 +46,7 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'], headless: false, viewport: { width: 1720, height: 990 } },
+      use: { ...devices['Desktop Chrome'], headless: true, /*viewport: { width: 1720, height: 990 }*/ },
     },
     
 
