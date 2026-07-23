@@ -4,7 +4,7 @@
 
 This repository contains automated end-to-end tests for a Flight Booking web application using **Playwright** with **TypeScript**. The framework follows the **Page Object Model (POM)** design pattern for better maintainability and scalability.
 
-## Tech Stack Modified
+## Tech Stack Modified New change
 
 * Playwright
 * TypeScript
