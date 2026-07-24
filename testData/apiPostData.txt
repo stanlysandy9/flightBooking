@@ -1,0 +1,10 @@
+{
+  "name": "Stanly's Iphone",
+  "data": {
+    "year": 2025,
+    "price": 1500000,
+    "CPU model": "M2",
+    "Hard disk size": "256 GB",
+    "User": "Stanly Nimmakuri"
+  }
+}

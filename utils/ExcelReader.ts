@@ -1,5 +1,6 @@
 import * as XLSX from 'xlsx';
 import path from 'path';
+import fs from 'fs';
 
 export class ExcelReader{
     static readExcel(testDataFolder:string,fileName:string, sheetName?:string){
@@ -12,4 +13,11 @@ export class ExcelReader{
         return data;
 
     }
+    //D:\playwrightAutomation\flightbooking\testData\apiPostData.txt
+    static readFileData(filePath:string){
+        return  JSON.parse(fs.readFileSync(path.join(process.cwd(),filePath),"utf-8"))
+
+    }
 }
+
+ 
